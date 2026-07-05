@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book rides with AI | Super</title>
+  <link rel="canonical" href="https://app.getsupers.com/use-cases/book-rides-with-ai/" />
+  <meta property="og:title" content="Book rides with AI | Super" />
+  <meta property="og:url" content="https://app.getsupers.com/use-cases/book-rides-with-ai/" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Article JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Book rides with AI",
+    "author": {"@type": "Organization", "name": "Super"},
+    "mainEntityOfPage": "https://app.getsupers.com/use-cases/book-rides-with-ai/",
+    "about": "AI agents that can operate computers to assist with ride booking and coordination"
+  }
+  </script>
+
+  <!-- BreadcrumbList JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://app.getsupers.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Use cases", "item": "https://app.getsupers.com/use-cases/"},
+      {"@type": "ListItem", "position": 3, "name": "Book rides with AI", "item": "https://app.getsupers.com/use-cases/book-rides-with-ai/"}
+    ]
+  }
+  </script>
+
+  <!-- HowTo JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to book rides with an AI assistant",
+    "step": [
+      {"@type": "HowToStep", "name": "Define your ride intent", "text": "Tell the AI where you are going, when you need pickup, and any constraints like luggage or child seats."},
+      {"@type": "HowToStep", "name": "Compare ETAs and prices", "text": "Have the agent open ride apps in a browser, check ETAs and fare estimates, and summarize differences."},
+      {"@type": "HowToStep", "name": "Confirm pickup details", "text": "Ask the agent to verify pickup pin accuracy, building entrances, and driver instructions before proceeding."},
+      {"@type": "HowToStep", "name": "Reuse saved routes", "text": "Let the agent recall past routes and preferences from a computer-use cache to speed up repeat bookings."},
+      {"@type": "HowToStep", "name": "Request user confirmation", "text": "Ensure the agent pauses for your approval before final submission in any third-party app."}
+    ]
+  }
+  </script>
+
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Can an AI really book rides for me?", "acceptedAnswer": {"@type": "Answer", "text": "An AI assistant like Super can assist by operating a browser to compare ride options and prepare bookings, but it requires your confirmation before final submission."}},
+      {"@type": "Question", "name": "How does Super differ from Siri or Gemini?", "acceptedAnswer": {"@type": "Answer", "text": "Siri and Gemini are broad assistants; Super focuses on durable computer-use workflows with a reusable computer-use cache for repeated tasks."}},
+      {"@type": "Question", "name": "Is price comparison reliable?", "acceptedAnswer": {"@type": "Answer", "text": "The agent reports what it sees at that moment; dynamic pricing can change, so final prices should always be reviewed by the user."}},
+      {"@type": "Question", "name": "What apps can be used?", "acceptedAnswer": {"@type": "Answer", "text": "Super works through the web interfaces of ride services available to you; availability depends on region and login status."}},
+      {"@type": "Question", "name": "Is my account information safe?", "acceptedAnswer": {"@type": "Answer", "text": "Users should limit permissions, review actions, and avoid sharing credentials beyond necessary session access."}},
+      {"@type": "Question", "name": "When should I not use an AI agent for rides?", "acceptedAnswer": {"@type": "Answer", "text": "For emergencies or last-second pickups, manual booking may be faster and more predictable."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="ambient-grid"></div>
+  <div class="paper-noise"></div>
+  <div class="page">
+    <nav class="nav shell">
+      <div class="brand"><img src="https://storage.googleapis.com/cheatlayer/landing/icon-transparent-512.png" alt="Super" /></div>
+      <div class="nav-links">
+        <a href="https://app.getsupers.com/use-cases/order-food-with-ai/">Order food with AI</a>
+        <a href="https://app.getsupers.com/use-cases/text-message-ai-assistant/">Text message AI assistant</a>
+        <a href="https://app.getsupers.com/use-cases/meta-display-ai-assistant/">Meta Display AI assistant</a>
+        <a href="https://app.getsupers.com/use-cases/ai-agent-build-websites/">AI agent to build websites</a>
+        <a href="https://app.getsupers.com/use-cases/computer-use-cache/">Computer-use cache</a>
+      </div>
+      <div class="nav-cta"><a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Try Super</a></div>
+    </nav>
+
+    <header class="hero shell">
+      <div class="hero-inner">
+        <h1>Book rides with AI — compare ETAs, coordinate pickups, and reuse routes</h1>
+        <p class="hero-sub">Super is a personal AI agent that can operate a real browser, compare ride options, and remember your repeated routes using a durable computer-use cache.</p>
+        <div class="hero-actions">
+          <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Start with Super</a>
+          <a class="btn btn-white" href="#guide">Read the field guide</a>
+        </div>
+        <div class="media-frame">
+          <video src="https://storage.googleapis.com/cheatlayer/landing/hero-0607-2-3.mp4" autoplay muted loop playsinline></video>
+        </div>
+      </div>
+    </header>
+
+    <section class="chapter shell">
+      <h2>Where Super fits in the ride-booking landscape</h2>
+      <div class="compare-grid">
+        <div class="compare-card">Siri — voice-first, device-integrated assistant for quick requests.</div>
+        <div class="compare-card">Gemini — powerful general assistant with emerging computer-use features.</div>
+        <div class="compare-card">ChatGPT — excellent reasoning and planning, evolving toward agents.</div>
+        <div class="compare-card">Grok — real-time, opinionated assistant tied to social context.</div>
+        <div class="compare-card">Folk and Orchids — niche or experimental tools within the automation market.</div>
+        <div class="compare-card highlight">Super — focused on repeatable computer work with cache reuse.</div>
+      </div>
+    </section>
+
+    <article id="guide" class="long-form-guide shell">
+      <h2>Direct answer</h2>
+      <p>If you want an AI assistant to help you compare rides, handle pickup details, and speed up repeated routes, Super is designed for that job. It operates a browser like a careful human assistant, pauses for your approval, and improves over time by reusing a computer-use cache.</p>
+
+      <h2>Market context</h2>
+      <p>Ride-hailing platforms increasingly rely on dynamic pricing and opaque ETA calculations. Consumer Reports has shown that the same trip can surface different prices depending on timing and context, which makes manual comparison tedious. At the same time, the AI market has shifted from chat-only tools toward agentic systems that can operate computers, as highlighted by coverage of Gemini’s computer-use capabilities and broader discussions of agent architectures in 2026.</p>
+      <p>General assistants like Siri, ChatGPT, Gemini, and Grok are improving rapidly, but they are designed for breadth. Specialized tools such as Folk or Orchids appear in the ecosystem as experiments or niche automations. Super positions itself differently: as a personal AI agent for durable, repeated computer-use workflows. For ride booking, that means fewer re-explanations, faster setup for common routes, and explicit confirmation steps.</p>
+
+      <h2>How to evaluate and use this workflow</h2>
+      <h3>How to request your first AI-assisted ride comparison</h3>
+      <ol>
+        <li><strong>Define your intent clearly.</strong> Explain your origin, destination, preferred pickup time, and constraints like luggage. The more concrete you are, the easier it is for the agent to open the right pages and check relevant options without guesswork.</li>
+        <li><strong>Ask for explicit comparison.</strong> Instruct the agent to check multiple services side by side and summarize ETAs and fare ranges. This mirrors how a human assistant would work and avoids single-app bias.</li>
+        <li><strong>Review pickup details.</strong> Before proceeding, have the agent read back the pickup pin, building notes, and any driver instructions. This reduces common errors in busy urban environments.</li>
+        <li><strong>Leverage saved routes.</strong> For commutes or frequent trips, let Super recall prior routes from its computer-use cache so the setup time drops dramatically on future runs.</li>
+        <li><strong>Confirm before submission.</strong> Always require a pause for confirmation. Super is built to wait for approval, keeping you in control of any third-party action.</li>
+      </ol>
+
+      <h2>Implementation checklist</h2>
+      <ul>
+        <li>Verify that you are logged into the ride services you want compared before starting the agent workflow.</li>
+        <li>Store clear names for frequent locations so the agent can reuse them accurately later.</li>
+        <li>Decide in advance which fields require manual confirmation, such as surge pricing acceptance.</li>
+        <li>Limit the agent’s session scope to ride-booking tasks to reduce unintended actions.</li>
+        <li>Re-run the workflow at different times to understand price volatility patterns.</li>
+        <li>Periodically review cached routes to ensure addresses and preferences remain current.</li>
+      </ul>
+
+      <h2>Risks and limits</h2>
+      <ul>
+        <li><strong>Dynamic pricing changes.</strong> Prices and ETAs can change between comparison and confirmation, so the final screen must always be checked by the user.</li>
+        <li><strong>Security considerations.</strong> As reported in 2026 coverage of computer-use agents, broader access increases attack surfaces, making permission discipline essential.</li>
+        <li><strong>Regional availability.</strong> Not all ride services offer equivalent web interfaces in every region, which can limit comparison depth.</li>
+        <li><strong>Latency vs urgency.</strong> For urgent rides, the extra confirmation steps may feel slower than manual booking.</li>
+      </ul>
+
+      <h2>FAQ</h2>
+      <h3>Can Super automatically pay for my ride?</h3>
+      <p>No. Super assists with the workflow and prepares actions, but you remain responsible for confirming and completing any payment within third-party apps.</p>
+      <h3>Is this better than using ChatGPT for planning?</h3>
+      <p>ChatGPT excels at planning and explanation. Super goes further by operating a browser and reusing state via a computer-use cache for repeated tasks.</p>
+      <h3>How does this compare to Gemini’s computer use?</h3>
+      <p>Gemini demonstrates strong technical capabilities. Super focuses on end-user durability and repeated workflows rather than experimental breadth.</p>
+      <h3>Where do Folk and Orchids fit?</h3>
+      <p>They represent niche or experimental approaches. Super aims to be a daily, dependable assistant for concrete computer tasks.</p>
+      <h3>Is voice control supported?</h3>
+      <p>Voice can be layered on top, but the core value here is reliable computer operation rather than voice-first interaction like Siri.</p>
+      <h3>What’s the best way to get started?</h3>
+      <p>Pick one frequent route and run it end to end with Super. That single test reveals whether the workflow fits your daily needs.</p>
+
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNnBDTUJlaU41UTBxTFduWmRNNDJpWF9qTmFqczhkXzBkc3JVMUVkYkhhVlN6R0FHdktwVEtzVW5Ub2ltM1JzMXpnSG5DNU9kb1k0UzRSMS1rdjlIVko0X29FOWxtbG9HMlVTMktndWJpWXB5UWVkMllXVzRMZEN4aTlaSmxEZHR6R0l5eGRxSTc5bjA1cHV2cHZaYkFuWXphcXBQNzZGWFhDd2x6OU9WV0duMWpDakppdHBTbzJqSUZwNWF0VjQxeEF4Mm9yYWtYSGt3RU8wbEZNZw?oc=5">Consumer Reports on ride pricing</a></li>
+        <li><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/">Google DeepMind on computer use</a></li>
+        <li><a href="https://www.anthropic.com/engineering/building-effective-agents">Anthropic on building effective agents</a></li>
+      </ul>
+    </article>
+
+    <section class="cta-band shell">
+      <h2>Try booking your next ride with Super</h2>
+      <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Get started</a>
+    </section>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
